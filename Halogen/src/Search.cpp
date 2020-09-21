@@ -351,8 +351,8 @@ Move SearchPosition(Position position, int allowedTimeMs, uint64_t& totalNodes, 
 		sharedData.ReportResult(depth, searchTime.ElapsedMs(), score, alpha, beta, position, move, locals);
 
 		depth++;
-		alpha = score - 25;
-		beta = score + 25;
+		alpha = score - 15;
+		beta = score + 15;
 		prevScore = score;
 	}
 
